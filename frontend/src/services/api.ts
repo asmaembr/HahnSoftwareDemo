@@ -10,14 +10,13 @@
 
 import axios from "axios";
 
-// Detect if we're running in a browser (client-side) vs server-side
 const isClient = typeof window !== 'undefined';
 
 const baseURL = isClient && window.location.hostname === 'localhost'
-  ? "http://localhost:5000/api"  // Browser accessing via localhost
+  ? "http://localhost:5000/api"  
   : process.env.NODE_ENV === 'production' 
-    ? "http://api:5000/api"      // Container-to-container communication
-    : "http://localhost:5000/api"; // Development mode
+    ? "http://api:5000/api"     
+    : "http://localhost:5000/api";
 
 export const api = axios.create({
   baseURL

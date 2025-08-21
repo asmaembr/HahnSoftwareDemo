@@ -59,14 +59,10 @@ onMounted(load);
       <img src="../../public/favicon.ico" width="50" height="50" />
       Task Manager
     </h1>
-
-    <!-- Add Task -->
     <div class="task-form">
       <input v-model="newTask" placeholder="New task" />
       <button @click="addTask">Add</button>
     </div>
-
-    <!-- Task Table -->
     <table class="task-table">
       <thead>
         <tr>
@@ -91,7 +87,7 @@ onMounted(load);
       </tbody>
     </table>
   </div>
-<!-- Interview Note -->
+
 <div class="interview-note">  
   I hope this Demo app lives up to your expectations !!
 </div>
@@ -118,7 +114,6 @@ html, body {
   width: 800px;
 }
 
-/* Header */
 h1 {
   text-align: center;
   color: #00d4ff;

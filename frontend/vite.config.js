@@ -21,7 +21,7 @@ export default defineConfig({
     vueDevTools(),
   ],
   server: {
-    port: 8080, // Change this to your desired development port
+    port: 8080,
   },
   resolve: {
     alias: {

@@ -9,7 +9,6 @@
  */
 
 using Application.Abstractions;
-using Domain.Entities;
 using MediatR;
 
 namespace Application.Tasks.DeleteTask;
