@@ -14,12 +14,5 @@ public class TaskItem
         Title = title.Trim();
     }
 
-    public void Rename(string newTitle)
-    {
-        if (string.IsNullOrWhiteSpace(newTitle))
-            throw new ArgumentException("Title is required");
-        Title = newTitle.Trim();
-    }
-
     public void ToggleComplete() => IsCompleted = !IsCompleted;
 }

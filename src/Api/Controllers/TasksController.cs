@@ -1,5 +1,7 @@
 using Application.Tasks.CreateTask;
 using Application.Tasks.GetAllTasks;
+using Application.Tasks.ChangeTaskStatus;
+using Application.Tasks.DeleteTask;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,5 +23,20 @@ public class TasksController : ControllerBase
     {
         var id = await _mediator.Send(cmd);
         return Ok(id);
+    }
+    [HttpPut("{id}")]
+    public async Task<IActionResult> ToggleComplete(Guid id, ChangeTaskStatusCommand cmd)
+    {
+        if (id != cmd.Id) return BadRequest();
+        var result = await _mediator.Send(cmd);
+        return Ok(result);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(Guid id, DeleteTaskCommand cmd)
+    {
+        if (id != cmd.Id) return BadRequest();
+        var result = await _mediator.Send(cmd);
+        return Ok(result);
     }
 }
