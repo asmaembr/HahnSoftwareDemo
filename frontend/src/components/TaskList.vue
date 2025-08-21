@@ -1,3 +1,13 @@
+<!--
+ * Copyright (c) 2025 Asmae Moubarriz
+ * All rights reserved.
+ * 
+ * This is a technical assignment submission to Hahn Software.
+ * 
+ * Author: Asmae Moubarriz
+ * Created: August 2025
+ -->
+
 <script setup lang="ts">
 import { ref, onMounted } from "vue";
 import { api } from "../services/api";

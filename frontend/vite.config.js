@@ -1,5 +1,15 @@
 import { fileURLToPath, URL } from 'node:url'
 
+/*
+ * Copyright (c) 2025 Asmae Moubarriz
+ * All rights reserved.
+ * 
+ * This is a technical assignment submission to Hahn Software.
+ * 
+ * Author: Asmae Moubarriz
+ * Created: August 2025
+ */
+
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
