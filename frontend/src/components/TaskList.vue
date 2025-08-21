@@ -56,7 +56,7 @@ onMounted(load);
 <template>
   <div class="task-container">
     <h1>
-      <img src="../../favicon.ico" width="50" height="50" />
+      <img src="../../public/favicon.ico" width="50" height="50" />
       Task Manager
     </h1>
 
